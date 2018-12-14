@@ -1,0 +1,6 @@
+subscription {
+  newsletterChanged(id: 99) {
+    id
+    status
+  }
+}

@@ -1,0 +1,7 @@
+mutation {
+  newsletterUpdateStatus(newsletterId: 99, status: "sent") {
+    name
+    id
+    status
+  }
+}
