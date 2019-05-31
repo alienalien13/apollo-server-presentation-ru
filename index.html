@@ -37,24 +37,30 @@
         <style>
             #cover {
                 background-color: var(--main-color);
+                padding-top: 150px;
+                padding-bottom: 100px; 
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
             }
 
             #cover h1 {
-                margin: 30px 0 0;
+                margin: 0 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
             }
 
             #cover h2 {
-                margin: 30px 0 0;
+                margin: 0px 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
             }
 
             #cover p {
-                margin: 10px 0 0;
+                margin: 0px 0 0;
                 text-align: center;
                 color: white;
                 font-style: italic;
@@ -76,7 +82,7 @@
             <img id="webscope-logo" src="pictures/webscope.svg" alt="Webscope.io logo">
             <div id="webscope">Webscope.io</div>
         </h2>
-        <a href="https://www.webscope.io/">https://www.webscope.io/</a>
+        <a target="_blank" href="https://www.webscope.io/">https://www.webscope.io/</a>
         <style>
             #wslg {
                 display: flex;
@@ -100,11 +106,72 @@
             <img id="goodevent-logo" src="pictures/goodevent-logo.svg" alt="Webscope.io logo">
             
         </h2>
-        <a href="https://goodevent.com/">https://goodevent.com/</a>
+        <a target="_blank" href="https://goodevent.com/">https://goodevent.com/</a>
         <style>
             #goodevent-logo {
                 width: 500px;
                 height: 100px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">
+            <span id="me">🤓</span>
+        </h2>
+
+        <div id="techs-wrapper">
+            <div class="next my-techs"><img src="pictures/react.jpg" alt=""><span>React.js</span></div>
+            <div class="next my-techs"><img src="pictures/react.jpg" alt=""><span>React Native</span></div>
+            <div class="next my-techs"><img src="pictures/firebase.jpeg" alt=""><span>Firebase</span></div>
+        </div>
+
+        <style>
+            #me {
+                position: relative;
+                top: -100px;
+                width: 70px;
+                height: 70px;
+                font-size: 70px;
+            }
+
+            .my-techs {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .my-techs span {
+                margin-left: 4px;
+            }
+
+            #techs-wrapper {
+                position: relative;
+                top: 300px;
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                justify-content: space-between;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <p class="shout custom-title">Let's play 🎮</p>
+    </section>
+
+    <section class="slide">
+        <p id="what-up" class="shout custom-title">Что с вами будет если вы не будете пробовать что-либо новое?</p>
+        <p id="what-down" class="shout next">⚓️</p>
+
+        <style>
+            #what-up {
+                position: relative;
+                top: 140px;
+            }
+
+            #what-down {
+                position: relative;
+                top: 60px;
             }
         </style>
     </section>
