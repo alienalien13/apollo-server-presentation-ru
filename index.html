@@ -265,15 +265,16 @@
 
     <section class="slide">
         <pre>
+            <br>
             <code>import { makeExecutableSchema } from 'graphql-tools';</code>
+            <code>// import typeDefs, resolvers</code>
             <code>export const schema = makeExecutableSchema({</code>
             <code>  typeDefs,</code>
             <code>  resolvers,</code>
             <code>});</code>
-            <code>const server = new ApolloServer({</code>
-            <code>  // executable schema, includes resolvers</code>
-            <code class="mark">  schema,</code>
-            <code>)}</code>
+
+            <code>// executable schema, includes resolvers</code>
+            <code>const server = new ApolloServer({ schema })</code>
         </pre>
     </section>
 
@@ -310,8 +311,8 @@
 
     <section class="slide">
         <pre>
-            <code>resolveBook(root, args, context, info) {</code>
-            <code>  const book = fetch(...)</code>
+            <code> async resolveBook(root, args, context, info) {</code>
+            <code>  const book = await fetch(...)</code>
             <code>  return book</code>
             <code>}</code>
         </pre>
